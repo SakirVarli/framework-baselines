@@ -2,9 +2,11 @@
 
 Packaged SAKiR framework baseline downloads.
 
+[Read baseline summaries and release notes](baselines-notes.md)
+
 ## Latest baseline
 
-[Download baseline 17](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_17.zip)
+[Download baseline 18](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_18.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
 
@@ -12,6 +14,7 @@ Extract the ZIP into a new folder before running designer.exe.
 
 | Baseline | Download |
 | --- | --- |
+| 18 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_18.zip) |
 | 17 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_17.zip) |
 | 16 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_16.zip) |
 | 15 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_15.zip) |
