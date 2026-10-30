@@ -4,6 +4,71 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 20
+
+**Packaged:** 2026-10-30 10:20:11 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_20.zip)
+
+### Summary
+
+General Improvements
+
+### Release notes
+
+Message Designer Routing
+
+- Added a visual routing graph with nodes, connections, and route conditions.
+- Added graph search, zoom, folding, saved layouts, and packet-routing traces.
+- Preserved hexadecimal routing values through editing, undo, and reopening.
+
+Sandbox Results
+
+- Added structured results for encoding, decoding, round trips, and default checks.
+- Improved field inspection, value previews, search, and copying.
+- Added paging for large arrays and clearer stale-result, timeout, and decoding-error states.
+
+Field Defaults and Checksums
+
+- New fields default to automatic initialization; advanced fields remain explicitly supplied.
+- Checksums can use selected earlier fields or precise byte ranges.
+- Checksum selections retain their references through renames and copies.
+
+Binary Message Decoding
+
+- Added object or dictionary output modes.
+- Added explicit object-hook, dictionary-hook, and no-hook choices.
+- Improved TX, RX, and ANY matching, including Communication Hub direction enums.
+
+Communication Hub
+
+- Added direct integration with generated Message Designer libraries.
+- Added live message subscriptions with filtering, bounded queues, and delivery diagnostics.
+- Added transmitted-header metadata decoding.
+- Improved periodic-send editing and scheduling controls.
+- Paused automatic table refresh while inspecting older messages.
+- Improved status polling and draining of received messages during shutdown.
+
+Reload and Resource Management
+
+- Unified Soft Restart and source-change reload into one serialized lifecycle.
+- Improved rollback when imports or initialization fail.
+- Prevented duplicate reloads of the same source revision.
+- Improved cleanup of widgets, plots, subscriptions, and replaced resources.
+- Blocked stale callbacks from changing the committed runtime.
+
+Config Designer
+
+- Improved its independent window behavior and saved window arrangement.
+- Added outline searching, filtering, expansion controls, and icons.
+- Preserved outline state through edits and undo.
+
+Documentation and Configuration
+
+- Updated help, API documentation, lifecycle guidance, and benchmark reports.
+
 ## Baseline 19
 
 **Packaged:** 2026-10-26 00:48:59 (UTC+03:00)
