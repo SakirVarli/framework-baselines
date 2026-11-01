@@ -4,6 +4,57 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 21
+
+**Packaged:** 2026-11-01 23:22:16 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_21.zip)
+
+### Summary
+
+Communication Hub pipeline and Message Designer protocol improvements
+
+### Release notes
+
+Communication Hub Pipeline
+
+- Replaced the previous session backends with separate I/O/framing, stateful parser, and storage/subscription processes, with automatic migration of supported saved configurations.
+- Added an IPC configuration tab with record and byte budgets, batching controls, and block/drop overload policies.
+- Shared equivalent source-filter evaluation between API subscriptions and Protocol Insights while keeping their callback and processing state independent.
+- Added capture-to-storage barriers, bounded query caching, retained-table reads after capture stops, and ordered replay/live handover.
+- Improved shutdown draining and diagnostics for queued records, in-flight bytes, drops, blocked handoffs, parser failures, and incomplete shutdowns.
+
+Message Designer Length Fields
+
+- Added encoded-byte length fields for whole messages or structures, selected fields, field ranges, and byte ranges.
+- Automatic lengths are calculated for construction and encoding; manually initialized lengths are checked against the actual encoded payload.
+- Verified received lengths during decoding and resolved final length bytes before checksum calculation.
+- Updated the message-library schema from version 11 to 12 while retaining migration support for existing libraries.
+
+Checksums and Enum Storage
+
+- Expanded checksum algorithms with SUM16, SUM32, XOR8, CRC8, CRC16/MODBUS, CRC16/CCITT-FALSE, and Adler32, with storage-capacity checks.
+- Added enum storage using packed bit integers, arbitrary-length byte integers, VarInt, and ZigZag.
+- Preserved enum aliases, unknown-value policies, guided defaults, numeric JSON exports, and applicable routing/size analysis.
+
+Routing and Definition Editing
+
+- Added Get expected values from defaults and Push expected values to defaults, with reviewed previews and atomic undoable transfers.
+- Improved routing-graph layout, connector positioning, click/drag behavior, and undo for visual layout changes.
+- Added batch deletion through the Delete key and context menus, with dependency checks, a single undo step, and predictable selection afterward.
+
+Startup and Restart
+
+- Passed Windows foreground permission through the application and supervisor during restart so the replacement application can activate.
+- Kept lifecycle feedback windows from taking focus and rebuilt the supervisor executable.
+
+Documentation and Verification
+
+- Added guides for the current Communication Hub pipeline, IPC settings, length fields, checksum algorithms, enum storage, and routing-default workflows.
+- Added regression tests and end-to-end, multi-session, IPC, and architecture benchmark reports.
+
 ## Baseline 20
 
 **Packaged:** 2026-10-30 10:20:11 (UTC+03:00)
