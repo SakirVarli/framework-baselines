@@ -6,14 +6,19 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 21](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_21.zip)
+[Download baseline 22](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_22.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
+
+Latest summary: **Assistant task continuity, sequential workflow preview, and clean baseline exports.**
+
+[Read baseline 22 release notes](baselines-notes.md#baseline-22)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 22 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_22.zip) |
 | 21 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_21.zip) |
 | 20 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_20.zip) |
 | 19 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_19.zip) |

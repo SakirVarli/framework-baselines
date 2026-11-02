@@ -4,6 +4,68 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 22
+
+**Packaged:** 2026-11-03 01:20:41 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_22.zip)
+
+### Summary
+
+Assistant task continuity, sequential workflow preview, and clean baseline exports
+
+### Release notes
+
+#### Assistant Task Continuity and Clarification
+
+- Added structured tasks with persistent requirements, constraints, decisions, questions, and draft references.
+- Added semantic task start, resume, amendment, cancellation, and topic switching while retaining earlier drafts and accepted decisions.
+- Added choice buttons, free-text answers, optional delegated choices, and mode-switch cards. Required answers pause dependent work; clarification does not grant editing or runtime-action permission.
+- Preserved task context across compaction, history reload, and workflow checkpoints, with transcript and revision checks for stale state.
+
+#### Sequential Workflow Preview
+
+- Added an opt-in workflow using the selected model sequentially for inspection, authoring, and review, with separate stage contexts and shared task budgets.
+- Added requirement coverage, candidate-file review, bounded repair cycles, transactional checkpoints, and recovery of interrupted runs.
+- Tied review clearance to the candidate, task, and project revisions. Apply remains an explicit user operation, and incomplete review blocks Apply.
+- Kept runtime-action preparation in Single agent mode; the sequential preview does not automatically apply changes, execute generated code, or switch models.
+
+#### Source-backed Answers and Recovery
+
+- Added static validation of Python API examples against installed source, including imports, facade methods, arguments, settings fields, and bindings across code blocks.
+- Kept standalone Serial and Communication Hub API evidence distinct through follow-up questions.
+- Added source/help evidence sharing, citation identity and revision checks, bounded answer correction, and recovery guidance when evidence is insufficient.
+- Improved context compaction and tool-call pairing so current corrections, inspected evidence, and task decisions survive longer conversations.
+
+#### Authoring and Model Compatibility
+
+- Added focused capability contracts and typed authoring support for layouts, tabs, buttons, callbacks, helpers, outputs, message libraries, and session actions.
+- Added atomic page/button/output proposals, independent outcome checks, and clearer repair guidance while preserving existing project content.
+- Added server-advertised reasoning options and context-limit discovery, bounded requests, streaming deadline checks, and structured response streaming.
+
+#### Chat Experience
+
+- Added prompt copying, conversation rename/delete controls, formatted streamed responses, and updated conversation styling.
+- Improved per-turn progress/status presentation, elapsed activity, cancellation controls, and settings/help content for workflow and reasoning options.
+
+#### Baseline Packaging and Supervisor
+
+- Added baseline_configs with clean starter project settings, callbacks, and helper packages, independent of live development files.
+- Export now excludes development history, Assistant state, tool output, and Python caches; framework help, branding, and product identity use current source.
+- Missing or invalid starter files stop export. Release metadata, payload hashes, installed manifests, and source recovery archives are generated from the staged payload.
+- Excluded development tests and local sibling modules from supervisor dependency discovery, and rebuilt designer.exe from the current supervisor source.
+
+#### Documentation and Verification
+
+- Added workflow, semantic-task, API-validation, evidence-recovery, capability evaluation, and reliability documentation and regression fixtures.
+- Current verification: 435 Assistant tests passed, one skipped, and two failed out of 438; all seven baseline tests and eight supervisor tests passed. The exported-application smoke test passed with 219 indexed files and 124 help topics.
+- Known UI test failures, reproduced individually: test_working_animation_follows_task_and_window_lifecycle and test_composer_controls_remain_adjacent_without_overlap_at_narrow_width. This baseline preserves the requested current state with these failures unresolved.
+- Sequential execution remains an opt-in preview. Broader repeated model qualification and multi-turn reliability gates remain open; deterministic checks and development evaluations do not establish general model reliability.
+
+- Framework source: https://github.com/SakirVarli/framework/commit/40e18828563c63afb59f96f2aa2528ff721b0373
+
 ## Baseline 21
 
 **Packaged:** 2026-11-01 23:22:16 (UTC+03:00)
