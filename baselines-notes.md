@@ -4,6 +4,43 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 24
+
+**Packaged:** 2026-11-03 12:30:08 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_24.zip)
+
+### Summary
+
+Assistant answer handling, handbook retrieval, and smoother chat scrolling
+
+### Release notes
+
+#### Assistant Answers and Task Completion
+
+- Separated the user-facing answer from the task label and change review summary. Explanation turns now require an actual reply, and streamed tool responses display the answer field.
+- Added bounded retries for empty replies and clearer incomplete-response messages. Blank replies are excluded from the correction exchange.
+- Updated Assistant instructions to respond in the user's language, answer greetings directly, and provide concrete steps with relevant installed handbook references.
+
+#### Handbook Retrieval
+
+- Raised the search rank of handbook sections whose full title appears in the question.
+- Guided the sequential workflow to use an existing handbook excerpt when it covers the requested procedure and inspect additional material for specific gaps.
+
+#### Chat Streaming and Navigation
+
+- Preserved the visible reading position during chat updates and added Jump to latest to resume following new replies.
+- Kept incomplete Markdown code fences formatted during streaming and progressively revealed buffered answers when streaming is enabled.
+- Adjusted prompt bubble width to fit the message and available chat space.
+
+#### Verification
+
+- Added regression coverage for streamed answers, buffered replies and scroll following, empty-response recovery, and rejection of summary-only explanations.
+- All seven baseline tests and the exported application smoke test passed.
+- The Assistant suite ran 441 tests. 438 passed, one was skipped, and two previously documented UI tests still failed, covering the working animation lifecycle and narrow composer controls.
+
 ## Baseline 23
 
 **Packaged:** 2026-11-03 11:30:43 (UTC+03:00)
