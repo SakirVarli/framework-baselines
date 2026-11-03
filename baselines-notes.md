@@ -4,6 +4,44 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 23
+
+**Packaged:** 2026-11-03 11:30:43 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_23.zip)
+
+### Summary
+
+Compact framework dialogs with expandable, copyable details
+
+### Release notes
+
+#### Shared Message Dialogs
+
+- Added a shared dialog for errors, warnings, confirmations, and status messages.
+- Show a short, wrapped summary by default. Show Details opens a bounded, scrollable view of the full plain-text message.
+- Copy places the complete message on the clipboard without closing the dialog. Long paths and unbroken text wrap within the available width.
+- Preserve standard button results and default choices. Closing a Yes/No confirmation selects No.
+
+#### Framework and Project Operations
+
+- Applied the shared dialog to baseline and app release notes, baseline export and upgrade feedback, build errors, project recovery, and VS Code diagnostics.
+- Made runtime tracebacks available through Show Details and Copy Traceback.
+- Added Copy to the source-change reload prompt, including the pending file paths.
+
+#### Designer and Tool Workflows
+
+- Adopted the dialog for validation and confirmations in Configuration Designer, Message Designer, Routing Studio, Communication Hub, and Protocol Insights.
+- Added concise prompts for potentially breaking Message Designer saves, generated-file overwrites, and structure deletion choices.
+- Applied copyable messages to selected Assistant review, output transfer, Variable Explorer, FTP, macro, and help workflows.
+
+#### Verification
+
+- Added tests for long-message wrapping, expandable details, full-message copying, and safe dismissal. Updated affected tests to intercept the shared dialog.
+- All 17 focused dialog, baseline, and Assistant review tests passed. The broader affected suite reported failures.
+
 ## Baseline 22
 
 **Packaged:** 2026-11-03 01:20:41 (UTC+03:00)
