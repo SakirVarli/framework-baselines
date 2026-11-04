@@ -6,18 +6,19 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 25](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip)
+[Download baseline 26](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
 
-Latest summary: **Unified Assistant workflow, runtime actions, and optional stage model selection.**
+Latest summary: **Communication Hub raw Ethernet capture, sending, and frame inspection.**
 
-[Read baseline 25 release notes](baselines-notes.md#baseline-25)
+[Read baseline 26 release notes](baselines-notes.md#baseline-26)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 26 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip) |
 | 25 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip) |
 | 24 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_24.zip) |
 | 23 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_23.zip) |

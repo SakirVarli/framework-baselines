@@ -4,6 +4,47 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 26
+
+**Packaged:** 2026-11-05 01:00:11 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip)
+
+### Summary
+
+Communication Hub raw Ethernet capture, sending, and frame inspection
+
+### Release notes
+
+#### Raw Ethernet Sessions
+
+- Added a Windows/Npcap Raw Ethernet transport to Communication Hub's existing I/O, parser, and storage pipeline.
+- Added background adapter discovery, saved adapter selection, manual adapter identifiers, and capture configuration controls.
+- Added EtherType, source MAC, destination MAC, and advanced BPF filters, including EtherType matching through single and double VLAN tags.
+- Added capture direction, promiscuous mode, snapshot length, driver buffer, timeout, frame-size, and raw-retention settings.
+
+#### Packet Capture and Sending
+
+- Preserved each captured packet as one complete parser message, including Ethernet headers, VLAN tags, and padding.
+- Added Ethernet header and capture metadata, including source/destination addresses, type or length, VLAN fields, capture origin, truncation, and decode errors.
+- Added manual and periodic full-frame sending with byte and size validation. Successful TX records represent native adapter submission.
+- Added bounded background native reads, cancellation-aware send handling, restart cleanup, and separate capture, submission, and driver-drop metrics.
+
+#### Storage, Export, and Interface
+
+- Retained raw frames through parsing, process handoff, table persistence, and Excel export, with a Raw Frame Hex export column.
+- Added Ethernet session summaries, sending guidance, capture diagnostics, and parser controls aligned with packet-based framing.
+- Expanded built-in help and documentation with Npcap setup, capture settings, receive/send contracts, filtering, and troubleshooting.
+
+#### Verification and Requirements
+
+- Added fake-backend and native API tests for packet decoding, filtering, adapter discovery, capture, sending, cancellation, shutdown, persistence, export, and the three-process pipeline.
+- Raw Ethernet sessions require the separately installed Windows Npcap runtime. Hardware acceptance with real adapters and independent packet capture remains outstanding.
+- All seven baseline tests and the exported application smoke test passed.
+- The Communication Hub suite ran 191 tests with 189 passing and two skipped. The focused Raw Ethernet suite ran 32 tests with 31 passing and one skipped.
+
 ## Baseline 25
 
 **Packaged:** 2026-11-04 07:17:52 (UTC+03:00)
