@@ -6,18 +6,19 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 24](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_24.zip)
+[Download baseline 25](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
 
-Latest summary: **Assistant answer handling, handbook retrieval, and smoother chat scrolling.**
+Latest summary: **Unified Assistant workflow, runtime actions, and optional stage model selection.**
 
-[Read baseline 24 release notes](baselines-notes.md#baseline-24)
+[Read baseline 25 release notes](baselines-notes.md#baseline-25)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 25 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip) |
 | 24 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_24.zip) |
 | 23 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_23.zip) |
 | 22 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_22.zip) |

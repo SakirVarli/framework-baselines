@@ -4,6 +4,49 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 25
+
+**Packaged:** 2026-11-04 07:17:52 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip)
+
+### Summary
+
+Unified Assistant workflow, runtime actions, and optional stage model selection
+
+### Release notes
+
+#### Unified Assistant Workflow
+
+- Made inspection, authoring, validation, and review the common Assistant execution path and removed the legacy single-agent service and workflow selector.
+- Required current review clearance before applying drafts, including drafts retained from older versions.
+- Added a dedicated runtime-action stage with restricted tools and an explicit Run Action confirmation. Mixed edit/action tasks defer action preparation until the edits are applied.
+- Improved action ownership, stale-action checks, interrupted-action recovery, and restoration of the previous Assistant transaction.
+
+#### Optional Model Selection by Stage
+
+- Added an Agent Models settings tab with optional model choices for Inspect, Author, Review, and Action on the configured server.
+- Added deterministic automatic assignment using advertised capabilities, context capacity, saved preferences, and assignment load. Multi-model selection defaults to off.
+- Applied the selected stage model's context, output, streaming, token parameter, and reasoning settings while sharing the workflow deadline, request limits, and cancellation.
+- Added stage model attribution, provider-reported model identity, and recorded reasons for preference fallback.
+
+#### Evidence and Requirement Checks
+
+- Improved evidence selection for cited source locations and retained distinct inspected ranges during answer review.
+- Added static checks for explicitly requested scalar callback return values.
+- Improved Python example syntax diagnostics and recovery guidance for missing layout targets.
+- Extracted bounded initial prompt construction for the shared workflow.
+
+#### Evaluation and Maintenance
+
+- Extended task, dialogue, and reliability evaluators with routing controls, per-model reporting, and workflow repair scenarios.
+- Added offline model-routing and workflow-oracle tests and updated workflow and model-selection documentation.
+- Removed tracked Assistant and test bytecode caches.
+- All seven baseline tests and the exported application smoke test passed.
+- The Assistant suite ran 467 tests. 462 passed, one was skipped, and three failed with one error. Failures covered the working animation lifecycle, narrow composer controls, and streaming GUI heartbeat. Tool-activity correlation raised a missing path error. These issues remain unresolved in this snapshot.
+
 ## Baseline 24
 
 **Packaged:** 2026-11-03 12:30:08 (UTC+03:00)
