@@ -8,9 +8,15 @@ Packaged SAKiR framework baseline downloads.
 
 [Download baseline 28](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_28.zip)
 
-Extract the ZIP into a new folder before running designer.exe.
+### Usage type 1 — Start a new project
 
-To upgrade an existing project from an older baseline to a newer one:
+1. Download the baseline ZIP.
+2. Extract the entire ZIP into a new project folder.
+3. Open the extracted folder and run **designer.exe**.
+
+### Usage type 2 — Upgrade an existing project
+
+Use the upgrade wizard to move an existing project from an older baseline to a newer one.
 
 1. Save your work and back up important project files.
 2. Download the newer baseline ZIP and leave it zipped.
