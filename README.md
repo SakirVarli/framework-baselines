@@ -6,18 +6,19 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 26](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip)
+[Download baseline 27](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_27.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
 
-Latest summary: **Communication Hub raw Ethernet capture, sending, and frame inspection.**
+Latest summary: **Common raw RX/TX message retention across Communication Hub transports.**
 
-[Read baseline 26 release notes](baselines-notes.md#baseline-26)
+[Read baseline 27 release notes](baselines-notes.md#baseline-27)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 27 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_27.zip) |
 | 26 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip) |
 | 25 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip) |
 | 24 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_24.zip) |

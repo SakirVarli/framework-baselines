@@ -4,6 +4,40 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 27
+
+**Packaged:** 2026-11-05 07:50:39 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_27.zip)
+
+### Summary
+
+Common raw RX/TX message retention across Communication Hub transports
+
+### Release notes
+
+#### Raw Message Retention
+
+- Extended optional raw RX/TX message retention to TCP client, TCP server, Serial, Telnet, and Raw Ethernet sessions.
+- Kept original message bytes in raw_frame alongside parsed output, including reconstructed receive messages and supplied transmit bytes.
+- Preserved raw bytes through process handoff and storage snapshots while retaining the existing Raw Frame Hex export support.
+
+#### Storage Settings and Migration
+
+- Moved Retain complete raw RX/TX messages after parsing into the common Storage tab under storage.retain_raw_frames.
+- Kept retention enabled by default for Raw Ethernet and disabled by default for the other transports.
+- Added automatic migration from the earlier Ethernet transport setting. An explicit storage setting takes precedence, and invalid non-boolean values fail validation.
+- New-session defaults follow the selected protocol until the user makes an explicit retention choice.
+
+#### Documentation and Verification
+
+- Updated built-in help and transport documentation with common retention behavior, settings migration, and memory implications.
+- Added tests for defaults, migration, validation, RX/TX parsing, process handoff, storage restoration, form round trips, and framed TCP receive/send retention.
+- The focused retention, Raw Ethernet, and baseline test run completed with 47 passing tests and one skipped test out of 48.
+- Package payload hashes, Python syntax, bundled source, and the recovery archive were verified.
+
 ## Baseline 26
 
 **Packaged:** 2026-11-05 01:00:11 (UTC+03:00)
