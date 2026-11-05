@@ -4,6 +4,51 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 28
+
+**Packaged:** 2026-11-05 16:07:31 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_28.zip)
+
+### Summary
+
+Assistant review recovery, action timelines, and inline change previews
+
+### Release notes
+
+#### Workflow Review and Recovery
+
+- Tracked delivery of every candidate file and page against the current candidate fingerprint, with evidence protected during context compaction.
+- Added review-only resume for compatible validated drafts, with source, candidate, task, and checkpoint checks before review resumes.
+- Reserved review requests and tool capacity using candidate page estimates and recorded budget and context preflight results.
+- Retained drafts when review cannot complete within the available context or budget.
+
+#### Evidence, Tool Events, and Outcomes
+
+- Validated source and candidate evidence payloads before granting read authority or progress credit.
+- Added request-scoped tool identities and paired completion/result events for rejected, failed, and cancelled operations.
+- Tracked progress through evidence ranges, candidate revisions, and task transitions.
+- Added structured host outcomes distinguishing answers, retained drafts, validation, review, Apply, and action preparation or dispatch.
+
+#### Actions Timeline and Inline Changes
+
+- Grouped tool calls, previews, change drafts, and actions under collapsible request groups with progress and review status.
+- Added inline change previews and review links in the conversation, with retained superseded cards and checks against the current proposal.
+- Updated timeline styling, scrolling, preview controls, and completion status presentation.
+
+#### Model Discovery and Evaluation
+
+- Queried router properties for each model to discover its allocated context and reasoning settings.
+- Extended evaluation reports with host outcomes, stage states, paired tool events, and evidence-contract failures.
+- Added workflow recovery, routing, inline preview, and activity regression coverage and implementation documentation.
+
+#### Verification
+
+- All seven baseline tests and the exported application smoke test passed.
+- The Assistant suite ran 502 tests with 501 passing and one skipped.
+
 ## Baseline 27
 
 **Packaged:** 2026-11-05 07:50:39 (UTC+03:00)

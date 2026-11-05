@@ -6,7 +6,7 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 27](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_27.zip)
+[Download baseline 28](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_28.zip)
 
 Extract the ZIP into a new folder before running designer.exe.
 
@@ -18,14 +18,15 @@ To upgrade an existing project from an older baseline to a newer one:
 4. Select the downloaded ZIP, then review compatibility, release notes, file comparisons, and replacement options. Leave replacement options cleared to preserve locally modified files, callbacks, helpers, and project settings. Select replacements only for content you intend to overwrite.
 5. Finish the wizard to verify and apply the update. The upgrader creates a backup and restarts the application.
 
-Latest summary: **Common raw RX/TX message retention across Communication Hub transports.**
+Latest summary: **Assistant review recovery, action timelines, and inline change previews.**
 
-[Read baseline 27 release notes](baselines-notes.md#baseline-27)
+[Read baseline 28 release notes](baselines-notes.md#baseline-28)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 28 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_28.zip) |
 | 27 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_27.zip) |
 | 26 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_26.zip) |
 | 25 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_25.zip) |
