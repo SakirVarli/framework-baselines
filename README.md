@@ -10,6 +10,14 @@ Packaged SAKiR framework baseline downloads.
 
 Extract the ZIP into a new folder before running designer.exe.
 
+To upgrade an existing project from an older baseline to a newer one:
+
+1. Save your work and back up important project files.
+2. Download the newer baseline ZIP and leave it zipped.
+3. Open your existing application and choose **File > Upgrade…**.
+4. Select the downloaded ZIP, then review compatibility, release notes, file comparisons, and replacement options. Leave replacement options cleared to preserve locally modified files, callbacks, helpers, and project settings. Select replacements only for content you intend to overwrite.
+5. Finish the wizard to verify and apply the update. The upgrader creates a backup and restarts the application.
+
 Latest summary: **Common raw RX/TX message retention across Communication Hub transports.**
 
 [Read baseline 27 release notes](baselines-notes.md#baseline-27)
