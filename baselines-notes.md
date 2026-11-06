@@ -4,6 +4,40 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 31
+
+**Packaged:** 2026-11-06 14:58:11 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_31.zip)
+
+### Summary
+
+Structured benchmark progress, live metrics, and reliable run status
+
+### Release notes
+
+#### Live Benchmark Status
+
+- Replaced the raw progress display with structured run state, case results, current activity, request usage, elapsed time, worker heartbeat, and available memory measurements.
+- Added passed, failed, and unsupported case counts with case completion progress.
+- Kept heartbeat updates separate from the active case and stage description.
+
+#### Completion and Worker Recovery
+
+- Preserved stopping and final states when delayed worker events arrive.
+- Reconciled final counts, request totals, and progress from the saved report.
+- Added clear failed-start, deadline, cancellation, and interrupted-worker feedback while retaining available partial results.
+- Reset status, counters, messages, and expanded details for a new run.
+
+#### Technical Details and Verification
+
+- Added a collapsible technical event log bounded to 200 entries, with sanitized worker events and selectable status text.
+- Added UI regression tests for heartbeat behavior, result counts, stopping, restarts, event sanitization, worker failures, and report reconciliation.
+- All 36 focused benchmark UI, benchmark recording, baseline export, and baseline release-note tests passed.
+- The exported application smoke test passed, and package payload hashes, Python syntax, bundled source, and recovery content were verified.
+
 ## Baseline 30
 
 **Packaged:** 2026-11-06 13:34:06 (UTC+03:00)
