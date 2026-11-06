@@ -4,6 +4,47 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 33
+
+**Packaged:** 2026-11-06 18:57:49 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_33.zip)
+
+### Summary
+
+Assistant host diagnostics, benchmark accounting, and balanced comparisons
+
+### Release notes
+
+#### Benchmark Failure Diagnostics
+
+- Preserved normalized error codes, original exception types and messages, bounded cause chains, and secondary recording failures.
+- Retained earlier stop reasons and detected report-finalization errors before leaving a completed summary.
+- Distinguished failed, interrupted, unsupported, and passed cases in reports and the status display.
+
+#### Request Accounting and Comparison Coverage
+
+- Added provider request accounting for attempted, recorded, successful, failed, unfinished, and unrecorded-start requests.
+- Recorded request purpose, parent case/turn/stage, deadline headroom, first observed output timings, and host tool/validation/recording spans.
+- Added trace-integrity, usage-availability, and paired-comparison coverage reporting with compatible handling of older reports.
+- Updated the benchmark suite to version 2, pairing comparison modes and interleaving Limits study candidates.
+
+#### Assistant Context and Preflight
+
+- Made runtime errors available on demand through get_recent_errors instead of injecting their details into every initial prompt.
+- Added current requirement IDs and candidate paths to review schemas and allowed-tool guidance after stage permission denials.
+- Bounded discovery and compatibility probes, including optional metadata lookups, cancellation, and streaming deadlines.
+
+#### Documentation and Verification
+
+- Added host optimization plans, implementation results, and report interpretation guidance.
+- Added regression coverage for error handling, request accounting, scheduling, provider metadata budgets, context selection, and review schemas.
+- All 150 focused benchmark, status UI, model routing, understanding, workflow, and baseline tests passed.
+- The exported application smoke test passed, and package payload hashes, Python syntax, bundled source, and recovery content were verified.
+- Live latency and quality gains remain unmeasured by these checks.
+
 ## Baseline 32
 
 **Packaged:** 2026-11-06 15:15:06 (UTC+03:00)
