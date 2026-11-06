@@ -4,6 +4,51 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 29
+
+**Packaged:** 2026-11-06 12:13:52 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_29.zip)
+
+### Summary
+
+Assistant environment benchmarks, diagnostic reports, and workflow recovery
+
+### Release notes
+
+#### Assistant Environment Benchmarks
+
+- Added Settings > Benchmark with Quick, Standard, Full live suite, and model-round Limits study options.
+- Added single-model, multi-model, and comparison runs in isolated starter projects, with whole-run budgets, cancellation, and partial results.
+- Added report previews, ZIP export, offline analysis, request and stage traces, usage measurements, and separate property and completion checks.
+- Added a reviewed round-limit recommendation flow based on calibration and validation cases.
+
+#### Chat Diagnostic Reports
+
+- Added Add to benchmark report to the chat context menu for attaching a selected conversation and available diagnostics.
+- Added sanitized previews, investigation notes, attachment limits, and checksum-backed report exports.
+- Kept attached conversations separate from benchmark scores and labelled gaps in historical diagnostic data.
+
+#### Workflow and Authoring Recovery
+
+- Improved evidence retention by preserving affected definitions and layout facts while allowing unrelated discovery and failed-read payloads to shrink.
+- Added bounded recovery for repeated reads, target misses, incomplete responses, and malformed review findings.
+- Improved atomic tab/button/output authoring with a literal greeting option, compatible staged-callback recovery, and clearer callback and placement validation.
+- Strengthened completion-aware outcome checks, required work coverage, and handling of delegated decisions and recorded answers.
+
+#### Documentation and Regression Coverage
+
+- Shipped benchmark fixtures and independent checks within the application and excluded them from Assistant retrieval.
+- Added benchmark, chat attachment, completion recovery, and live-failure regression suites.
+- Documented benchmark operation and targeted live remediation results, including remaining model-dependent semantic and review failures.
+
+#### Verification
+
+- All seven baseline tests and the exported application smoke test passed.
+- The Assistant suite ran 565 tests with 564 passing and one skipped.
+
 ## Baseline 28
 
 **Packaged:** 2026-11-05 16:07:31 (UTC+03:00)
