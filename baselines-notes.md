@@ -4,6 +4,39 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 30
+
+**Packaged:** 2026-11-06 13:34:06 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_30.zip)
+
+### Summary
+
+Reliable benchmark proposal recording and clearer failure diagnostics
+
+### Release notes
+
+#### Benchmark Proposal Recording
+
+- Fixed recording of completed edit workflows by serializing staged Proposal and Edit objects as structured report data.
+- Included proposal fingerprints and edit details while applying sanitization before persistence.
+- Added support for Path values in recorded diagnostic payloads.
+
+#### Recording Failure Diagnostics
+
+- Preserved the first recording failure's message, exception type, and phase through cancellation and report finalization.
+- Classified recording failures as failed runs and kept deadline, request, and trace limits classified as limited runs.
+- Prevented a secondary error while recording provider errors from replacing the original failure.
+- Added guidance for investigating BENCHMARK_RECORDING_FAILED and rerunning affected earlier reports.
+
+#### Verification
+
+- Added regression tests for proposal sanitization, disk-error diagnostics, original-error preservation, and a complete inspect/author/review recording flow.
+- All 35 focused benchmark, chat attachment, baseline export, and baseline release-note tests passed.
+- The exported application smoke test passed, and package payload hashes, Python syntax, bundled source, and recovery content were verified.
+
 ## Baseline 29
 
 **Packaged:** 2026-11-06 12:13:52 (UTC+03:00)
