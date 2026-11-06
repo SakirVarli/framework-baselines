@@ -4,6 +4,49 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 34
+
+**Packaged:** 2026-11-07 00:24:02 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_34.zip)
+
+### Summary
+
+Assistant evidence provenance, process-aware review, and benchmark instrumentation
+
+### Release notes
+
+#### Evidence Delivery and Citations
+
+- Added a bounded, turn-scoped evidence registry linking references to inspected content, revision, scope, and exact host payload delivery.
+- Kept delivered provenance available when recent retrieval text rotates, with explicit metadata and retained-text limits.
+- Added citable data-preview references, effective inspection options, and labelled file revision metadata.
+- Improved source links with inclusive line ranges, encoded filenames, freshness checks, and corrective evidence references.
+
+#### Process Review and Task Intent
+
+- Added host observations for not_applied and answer_before_changes requirements, separate from candidate-content review.
+- Preserved ordering obligations through question answers, task amendments, and receipt rotation.
+- Kept unresolved intent explicit when clarification precedes a work declaration, and reconciled completion with host-confirmed draft and action state.
+- Added bounded correction for literal completion-tool text without executing it.
+- Saved task ledgers now use version 2. Rollback requires a compatible reader or a retained pre-migration snapshot.
+
+#### Inspection and Benchmark Diagnostics
+
+- Made the read-only data reader and scoped file inventory available to inspectors before domain selection.
+- Retained failed-turn evidence, response state, candidate diagnostics, and authoritative outcomes without treating retained answers as delivered.
+- Added setup wall-time and process-CPU spans, recorder sanitization/serialization/write measurements, and separate scenario, oracle, matrix, and instrumentation fingerprints.
+- Added a persistent unbuffered benchmark writer and preserved originating failures when cleanup also fails.
+
+#### Documentation and Verification
+
+- Added optimization analysis, implementation results, and regression tests for evidence delivery, process ordering, task-state migration, and benchmark instrumentation.
+- All 146 focused evidence-registry, completion-recovery, benchmark, workflow, evidence-recovery, and baseline tests passed.
+- The exported application smoke test passed, and package payload hashes, Python syntax, bundled source, and recovery content were verified.
+- Controlled live quality and performance evaluation remains outstanding.
+
 ## Baseline 33
 
 **Packaged:** 2026-11-06 18:57:49 (UTC+03:00)
