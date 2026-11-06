@@ -4,6 +4,38 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 32
+
+**Packaged:** 2026-11-06 15:15:06 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_32.zip)
+
+### Summary
+
+Refined benchmark status layout, result counters, and visual styling
+
+### Release notes
+
+#### Benchmark Status Layout
+
+- Added prominent passed, failed, and unsupported result counters and a themed run-state badge.
+- Arranged case, model, stage, turn, mode, repetition, elapsed time, request usage, heartbeat, and memory in aligned fields.
+- Shortened long case and model identifiers to fit their cells, with full values available in tooltips.
+- Cleared previous case details when a new case starts and retained the existing terminal-state behavior.
+
+#### Appearance and Controls
+
+- Added Assistant theme styling for status cards, result counters, state badges, messages, progress, and technical details.
+- Applied consistent panel backgrounds and Run Benchmark and Stop button styling.
+
+#### Verification
+
+- Added regression coverage for aligned columns, long identifiers, tooltips, and field resets at narrow widths.
+- All 31 focused benchmark UI, Assistant settings UI, baseline export, and baseline release-note tests passed.
+- The exported application smoke test passed, and package payload hashes, Python syntax, bundled source, and recovery content were verified.
+
 ## Baseline 31
 
 **Packaged:** 2026-11-06 14:58:11 (UTC+03:00)
