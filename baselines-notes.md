@@ -4,6 +4,43 @@ Release summaries and notes from `baseline-package.json` inside each ZIP, listed
 Baselines with neither a summary nor release notes are marked **Test baseline**. Recorded wording is retained; list formatting is normalized for Markdown.
 Package timestamps use Europe/Istanbul time (UTC+03:00).
 
+## Baseline 35
+
+**Packaged:** 2026-11-07 10:26:00 (UTC+03:00)
+
+**Version:** 0.1.0 | **Build:** 1
+
+[Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_35.zip)
+
+### Summary
+
+Assistant review recovery, source caching, and compact benchmark traces
+
+### Release notes
+
+#### Assistant Review and Recovery
+
+- Preserve terminal outcomes when a model returns trailing tool calls. Record those calls as skipped without dispatching them or charging the tool budget.
+- Require new process obligations to quote the user’s instruction. Preserve their ordering history across amendments and block clearance when process proof remains unverified.
+- Give reviewers requirement-specific evidence guidance and one bounded retry when they omit the completion call.
+
+#### Context and Source Indexing
+
+- Reserve retrieval space for recent dialogue and compacted summaries.
+- Reuse bounded caches for source parsing and tokenization. Continue reading and hashing current files to check freshness.
+- Reuse a source index across turns in the same benchmark case and measure individual setup steps.
+
+#### Benchmark Traces and Diagnostics
+
+- Compress consecutive stream events in schema 2 blocks. The event_rows decoder reads both legacy logs and the new format.
+- Sanitize reconstructed stream text and arguments to catch credentials split across chunks. An abrupt process crash can lose up to one pending block.
+- Add a bounded greeting behavior probe as auxiliary diagnostic evidence. Existing benchmark scores use the same pass criteria.
+
+#### Verification
+
+- All 96 focused tests passed, along with the exported application smoke test.
+- Verified the ZIP payload, Python syntax, and recovery source.
+
 ## Baseline 34
 
 **Packaged:** 2026-11-07 00:24:02 (UTC+03:00)

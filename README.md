@@ -6,7 +6,7 @@ Packaged SAKiR framework baseline downloads.
 
 ## Latest baseline
 
-[Download baseline 34](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_34.zip)
+[Download baseline 35](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_35.zip)
 
 ### Usage type 1 — Start a new project
 
@@ -24,14 +24,15 @@ Use the upgrade wizard to move an existing project from an older baseline to a n
 4. Select the downloaded ZIP, then review compatibility, release notes, file comparisons, and replacement options. Leave replacement options cleared to preserve locally modified files, callbacks, helpers, and project settings. Select replacements only for content you intend to overwrite.
 5. Finish the wizard to verify and apply the update. The upgrader creates a backup and restarts the application.
 
-Latest summary: **Assistant evidence provenance, process-aware review, and benchmark instrumentation.**
+Latest summary: **Assistant review recovery, source caching, and compact benchmark traces.**
 
-[Read baseline 34 release notes](baselines-notes.md#baseline-34)
+[Read baseline 35 release notes](baselines-notes.md#baseline-35)
 
 ## All baselines
 
 | Baseline | Download |
 | --- | --- |
+| 35 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_35.zip) |
 | 34 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_34.zip) |
 | 33 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_33.zip) |
 | 32 | [Download ZIP](https://github.com/SakirVarli/framework-baselines/raw/refs/heads/main/baselines/SAKiR_GUI_baseline_32.zip) |
